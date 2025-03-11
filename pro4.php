@@ -16,7 +16,7 @@ include_once("nevbar.php");
             <h4 class="text">₹1,88,000.00</h4>
             <p class="text-muted">(M.R.P. incl. of all taxes)</p>
 
-            <p><strong>Colours:</strong> Black</p>
+            <p><strong>Colours:</strong>Black</p>
 
             <!-- Uncomment if needed -->
             <!-- <button class="btn btn-dark w-100 mb-2">Contact Concierge Services</button>
