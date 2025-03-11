@@ -1,0 +1,229 @@
+*{margin: 0%;padding: 0%;}
+
+nav{
+    position: sticky;
+    background-color: white;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px;
+    border-bottom: 2px solid black;
+    border-color: transparent;
+}
+nav ul li:hover{
+    border-color: black;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+#first-child{
+    margin-right: 25%;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#circle-user-name{
+    height: 100px;
+    width: 100px;
+    background-color:white;
+    border-radius: 50%;
+    /* border:2px solid black; */
+    text-align: center;
+    top: 48%;
+    left: 46.5%;
+    position:absolute;
+    
+}
+
+#my-order-table{
+    background-color:white;
+    height: 250px;
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    left: 60%;
+    top: 30px;
+    border-radius: 5px;
+}
+
+#my-order-table:hover{
+    /* transform: translateY(-20px); */
+    transition: 0.3s linear;
+}
+
+#btn{
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 30px;
+    margin-left:50px;
+}
+
+#my-profile-table{
+    background-color: white;
+    height: 570px;
+    width: 600px;
+    display: inline-block;
+    position: relative;
+    right: 400px;
+    top: 30px;
+    border-radius: 5px;
+}
+
+#my-profile-table:hover{
+    /* transform: translateY(-20px); */
+    transition: 0.3s linear;
+}
+
+.icns-boxes{
+    margin-top:30px; border:1px solid black; padding:40px; display:inline-block;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.icns-boxes:hover{
+    background-color: brown;
+    box-shadow: -2px 2px 2px 2px rgb(170, 167, 167);
+    transform: translateY(-10px);
+    transition: 0.5s linear;
+    border-radius: 10px;
+}
+
+.icns-boxes img:hover{
+    filter: brightness(0) invert(1);
+}
+
+#btn-edit-profile{
+    width: 500px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.hover-inside-border{
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    height: 40px;
+    width: 500px;
+}
+
+.hover-inside-border:hover{
+    box-shadow: inset 0 0 0 1px #000;
+    transition: .3s linear;
+}
+
+#wishist-table{
+    background-color:white;
+    height: 180px;
+    width: 500px;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: 110%;
+    border-radius: 5px;   
+}
+
+#wishist-table:hover{
+    /* transform: translateY(-20px); */
+    transition: 0.3s linear;
+}
+
+#appointment-table{
+    background-color: white;
+    height: 250px;
+    width: 600px;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top: 80px;
+    border-radius: 5px;
+}
+
+#btn-book-apt{
+        width: 500px;
+        margin-top: 20px;
+        border-radius: 30px;
+        margin-left:40px;
+}
+
+#appointment-table:hover{
+    /* transform: translateY(-20px); */
+    transition: 0.3s linear;
+}
+
+.footer {
+    background-color:#f2f2f2;;
+    color: #333;
+    font-family: system-ui;
+    padding: 20px 40px;
+    border-top: 1px solid #ddd;
+    margin-top: 150px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom ul li a:hover {
+    text-decoration: underline;
+}
+
+.country {
+    font-weight: bold;
+}
