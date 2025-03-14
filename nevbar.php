@@ -302,3 +302,6 @@
     </div>
     </div>
   </nav>
+  <?php
+    include "config.php";
+  ?>

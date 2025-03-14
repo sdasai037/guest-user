@@ -1,5 +1,5 @@
-  <!-- Bootstrap CSS -->
- 
+  Bootstrap CSS
+
   <?php
     include_once("before-loginheader.php");
     ?>
@@ -12,7 +12,8 @@
           <form action="forget_otp.php" method="post" id="login-form">
               <div class="mb-3">
                   <label for="email" class="form-label">Email*</label>
-                  <input type="email" id="email" name="email" class="form-control" required>
+                  <input type="email" id="email" name="email" class="form-control" data-validation="required email">
+                  <div class="error" id="emailError"></div>
               </div>
 
               <button type="submit" class="btn btn-secondary mt-3 ">Send OTP</button>
@@ -30,7 +31,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 
 
-  <script>
+  <!-- <script>
       $(document).ready(function() {
           $("#login-form").validate({
               rules: {
@@ -59,4 +60,4 @@
               }
           });
       });
-  </script>
+  </script> -->

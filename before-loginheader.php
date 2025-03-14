@@ -236,3 +236,7 @@
             <a href="login.php" class="login">LOG IN TO MYLV</a>
         </div>
     </header>
+    <?php
+        include "config.php"
+    ?>
+    

@@ -1,12 +1,7 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "lv";
+try {
+    $con = mysqli_connect("localhost", "root", "", "2024_25_4DCE_A_B_Sample");
 
-$conn = new mysqli($host, $username, $password, $database);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+} catch (Exception $e) {
+    echo "Error in Connecting with Database Server" . $e->getMessage();;
 }
