@@ -17,7 +17,8 @@
               <form action="after-login-index.php" method="post" id="login-form">
                   <div class="mb-3">
                       <label for="email" class="form-label">Email*</label>
-                      <input type="email" id="email" name="email" class="form-control" validateField="email">
+                      <input type="email" id="email" name="email" class="form-control" data-validation="required email">
+                      <div class="error" id="emailError"></div>
                   </div>
                   <div class="mb-3">
                       <label for="password" class="form-label">Password*</label>
@@ -52,7 +53,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 
 
-      <script>
+      <!-- <script>
           $(document).ready(function() {
               $("#login-form").validate({
                   rules: {
@@ -89,4 +90,4 @@
                   }
               });
           });
-      </script>
+      </script> -->

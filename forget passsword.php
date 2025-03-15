@@ -1,8 +1,8 @@
-  Bootstrap CSS
-
   <?php
     include_once("before-loginheader.php");
     ?>
+  <script src="js/velidaction.js"></script>
+
   <div class="containerr d-flex flex-wrap justify-content-between">
 
       <div class="login-box col-12 col-md-6 mb-4">

@@ -7,6 +7,7 @@
   <title>Louis Vuitton Navbar</title>
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/velidaction.js"></script>
   <style>
     /* webkith */
     /* Width of the scrollbar */
@@ -255,7 +256,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f0f0f0">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="index.php">
         <span style="font-family: cursive;">My</span>
         <span class="brand ms-1">
           <img src="images/Louis_Vuitton-Logo.wine copy.png" alt="Brand Logo" style="width: 50px; height: auto;">
@@ -302,6 +303,26 @@
     </div>
     </div>
   </nav>
+  <div class="container">
+    <?php
+    if (isset($_COOKIE['success'])) {
+    ?>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> <?php echo $_COOKIE['success']; ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <?php
+    }
+    if (isset($_COOKIE['error'])) {
+    ?>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong><?php echo $_COOKIE['error']; ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <?php
+    }
+    ?>
+  </div>
   <?php
-    include "config.php";
-  ?>
+  include "config.php";
+  

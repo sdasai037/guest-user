@@ -118,7 +118,8 @@ include_once("before-loginheader.php");
         </div>
         <div class="mb-3">
             <label for="mobile" class="form-label">Mobile Number*</label>
-            <input type="tel" id="mobile" name="mobile" class="form-control form-control-sm" required pattern="[0-9]{10}">
+            <input type="tel" id="mobile" name="mobile" class="form-control form-control-sm" data-validation="required numeric min max" data-min="10" data-max="10">
+            <div class="error" id="mobileError"></div>
         </div>
         <div class="mb-3 position-relative">
             <label for="password" class="form-label">Password*</label>
