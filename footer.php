@@ -1,6 +1,6 @@
 <?php
-include "nevbar.php";
-// Fetch all active footer links grouped by section
+
+
 $sql = "SELECT section_name, link_text, link_url FROM footer WHERE status = 'active' ORDER BY section_order";
 $result = $con->query($sql);
 

@@ -251,8 +251,9 @@
   </style>
 
 </head>
-
-
+  <?php
+  include "config.php";
+?>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f0f0f0">
     <div class="container-fluid">
@@ -323,6 +324,5 @@
     }
     ?>
   </div>
-  <?php
-  include "config.php";
+
   

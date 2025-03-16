@@ -11,14 +11,16 @@
           <p class="required">Required fields*</p>
           <form action="forget_otp.php" method="post" id="login-form">
               <div class="mb-3">
-                  <label for="email" class="form-label">Email*</label>
-                  <input type="email" id="email" name="email" class="form-control" data-validation="required email">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" data-validation="required email">
                   <div class="error" id="emailError"></div>
               </div>
 
               <button type="submit" class="btn btn-secondary mt-3 ">Send OTP</button>
+
           </form>
-          <!-- <p class="mt-3">Don't have a MyLV account? <a href="login.php">Create an Account</a></p> -->
+          <a href="login.php"><button class="btn btn-secondary mt-3 ">Back to Login</button></a>
+
       </div>
   </div>
   <?php
@@ -26,9 +28,9 @@
     ?>
 
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script> -->
 
 
   <!-- <script>

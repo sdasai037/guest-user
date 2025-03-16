@@ -14,6 +14,10 @@
     <script src="js/additional-methods.min.js"></script>
     <script src="js/velidaction.js"></script>
 </head>
+<?php
+session_start();
+ob_start();
+?>
 <style>
     .nav-bar {
         padding: 20px;
@@ -237,6 +241,25 @@
         </div>
     </header>
     <?php
-        include "config.php"
+    include "config.php"
     ?>
-    
+    <div class="container">
+        <?php
+        if (isset($_COOKIE['success'])) {
+        ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> <?php echo $_COOKIE['success']; ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <?php
+        }
+        if (isset($_COOKIE['error'])) {
+        ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Error!</strong><?php echo $_COOKIE['error']; ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <?php
+        }
+        ?>
+    </div>

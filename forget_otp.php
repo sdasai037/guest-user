@@ -95,85 +95,32 @@
           <p class="required">Required fields*</p>
           <form action="profile.php" method="post" id="login-form">
 
-              <div class="mb-3">
-                  <label for="OTP" class="form-label">OTP*</label>
-                  <input type="password" id="OTP" name="OTP" class="form-control" required>
-              </div>
-              <div class="mb-3">
-                  <label for="password" class="form-label">Enter New Password*</label>
-                  <input type="password" id="password" name="password" class="form-control" required>
-              </div>
-              <div class="c_mb-3">
-                  <label for="password" class="form-label">Confirm New Password*</label>
-                  <input type="password" id="c_password" name="c_password" class="form-control" required>
-              </div>
+              <div class="d-flex justify-content-center mb-4" name="otp">
+                  <input type=" text" class="form-control otp-input" maxlength="1" autofocus oninput="moveToNext(this, 0)" data-validation="required numeric" name="otp1">
 
+                  <input type="text" class="form-control otp-input" maxlength="1" oninput="moveToNext(this, 1)" data-validation="required numeric" name="otp2">
 
-              <button type="submit" class="btn btn-secondary mt-3 ">Save</button>
-              <!-- <button class="btn btn-outline-secondary order-btn">Order</button> -->
+                  <input type="text" class="form-control otp-input" maxlength="1" oninput="moveToNext(this, 2)" data-validation="required numeric" name="otp3">
+                  <input type="text" class="form-control otp-input" maxlength="1" oninput="moveToNext(this, 3)" data-validation="required numeric" name="otp4">
+                  <input type="text" class="form-control otp-input" maxlength="1" oninput="moveToNext(this, 4)" data-validation="required numeric" name="otp5">
+                  <input type="text" class="form-control otp-input" maxlength="1" oninput="moveToNext(this, 5)" data-validation="required numeric" name="otp6">
+              </div>
+              <div class="error" id="otpError"></div>
+
+              <button type="submit" class="btn btn-secondary mt-3 ">Update Password</button>
           </form>
-          <!-- <p class="mt-3">Don't have a MyLV account? <a href="login.php">Create an Account</a></p> -->
+          <a href="login.php"><button class="btn btn-secondary mt-3 ">Back to Login</button></a>
       </div>
   </div>
   <?php
     include 'footer.php';
     ?>
-
-
   <script>
-      $(document).ready(function() {
-          $("#login-form").validate({
-              rules: {
-                  OTP: {
-                      required: true,
-                      digits: true,
-                      minlength: 6,
-                      maxlength: 6
-                  },
-                  password: {
-                      required: true,
-                      minlength: 8,
-                      maxlength: 20,
-                      pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,20}$/
-                  },
-                  c_password: {
-                      required: true,
-                      equalTo: "#password"
-                  }
-              },
-              messages: {
-                  OTP: {
-                      required: "Please enter the OTP sent to your email.",
-                      digits: "OTP should contain only numbers.",
-                      minlength: "OTP must be exactly 6 digits.",
-                      maxlength: "OTP must be exactly 6 digits."
-                  },
-                  password: {
-                      required: "Please enter your password.",
-                      minlength: "Minimum length is 8 characters.",
-                      maxlength: "Maximum length is 20 characters.",
-                      pattern: "Password must contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character."
-                  },
-                  c_password: {
-                      required: "Please confirm your password.",
-                      equalTo: "Your entered password does not match."
-                  }
-              },
-              errorElement: "div",
-              errorPlacement: function(error, element) {
-                  error.addClass("text-danger");
-                  error.insertAfter(element);
-              },
-              highlight: function(element) {
-                  $(element).addClass("is-invalid");
-              },
-              unhighlight: function(element) {
-                  $(element).removeClass("is-invalid").addClass("is-valid");
-              },
-              submitHandler: function(form) {
-                  alert("Form submitted successfully!");
-                  form.submit();
+      function moveToNext(input, index) {
+          if (input.value.length === input.maxLength) {
+              if (index < 5) {
+                  input.parentElement.children[index + 1].focus();
               }
-          });
-      });
+          }
+      }
   </script>
