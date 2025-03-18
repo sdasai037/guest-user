@@ -15,8 +15,8 @@
     <script src="js/velidaction.js"></script>
 </head>
 <?php
-session_start();
-ob_start();
+// session_start();
+// ob_start();
 ?>
 <style>
     .nav-bar {

@@ -11,7 +11,7 @@ $result = mysqli_query($con, $q);
         <?php while ($row = mysqli_fetch_assoc($result)) : ?>
             <div class="col">
                 <div class="product-card color">
-                    <a href="product_detail.php?id=<?= $row['id'] ?>">
+                    <a href="w_shoes.php">
                         <img src="<?= ($row['image']) ?>" class="product-img">
                     </a>
                     <div class="product-info">
