@@ -20,7 +20,7 @@
                     <input type="password" id="confirmPassword" name="c_password" class="form-control" placeholder="Confirm new password">
                 </div>
 
-                <button type="submit" class="btn btn-outline-danger w-100 mb-3">Update Password</button>
+                <button type="submit" class="btn btn-secondary mt-3 ">Update Password</button>
 
                 <div class="text-center">
                     <a href="login.php" class="text-danger text-decoration-none">Back to Login</a>
