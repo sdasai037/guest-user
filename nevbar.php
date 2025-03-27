@@ -34,7 +34,6 @@
             background: rgb(145, 160, 69);
         }
 
-        /*  */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -308,7 +307,7 @@
                     <?php if (isset($_SESSION['user_id'])) { ?>
                         <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
                     <?php } else { ?>
-                        <li class="nav-item"><a class="nav-link" href="sign-up.php">Sign-up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signup.php">Sign-up</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
                     <?php } ?>
                 </ul>

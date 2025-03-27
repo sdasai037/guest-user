@@ -91,9 +91,7 @@
 </head>
 
 
-<?php
-include_once("before-loginheader.php");
-?>
+
 <div class="container py-5">
     <h2 class="text-uppercase fw-bold mb-3">Create Your Account</h2>
     <p class="text-muted">Create your account to have access to a more personalized experience.</p>
@@ -139,6 +137,3 @@ include_once("before-loginheader.php");
     </form>
 </div>
 
-<?php
-include('footer.php');
-?>

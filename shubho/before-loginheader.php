@@ -34,9 +34,7 @@
         color: black;
     }
 
-    /*  */
-    /* this is of login.php */
-    /* this is of login page */
+
     body {
         margin: 0;
         padding: 0;
@@ -240,26 +238,4 @@
             <a href="login.php" class="login">LOG IN TO MYLV</a>
         </div>
     </header>
-    <?php
-    include "config.php"
-    ?>
-    <!-- <div class="container">
-        <?php
-        if (isset($_COOKIE['success'])) {
-        ?>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Success!</strong> <?php echo $_COOKIE['success']; ?>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        <?php
-        }
-        if (isset($_COOKIE['error'])) {
-        ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Error!</strong><?php echo $_COOKIE['error']; ?>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        <?php
-        }
-        ?>
-    </div> -->
+    </div>
