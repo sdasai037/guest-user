@@ -92,7 +92,8 @@ include_once "before-loginheader.php";
         <form method="post" action="">
             <div class="mb-3">
                 <label for="email" class="form-label">Enter your registered email</label>
-                <input type="email" name="email" class="form-control" required>
+                <input type="email" name="email" class="form-control" data-validation="required email">
+                <div class="error" id="emailError"></div>
             </div>
             <button type="submit" class="btn btn-secondary mt-3 ">Send OTP</button>
         </form>
