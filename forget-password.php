@@ -62,12 +62,12 @@ function sendOTP($email, $otp)
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'sdesai037@rku.ac.in'; // Store securely
-        $mail->Password = 'xnat higy mpxl ntis';   // Use App Password, NEVER real password
+        $mail->Username = 'bhaiphp@gmail.com'; // Store securely
+        $mail->Password = 'tqnp vikw vnqb mdrb';   // Use App Password, NEVER real password
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        $mail->setFrom('sdesai037@rku.ac.in', 'Support Team');
+        $mail->setFrom('bhaiphp@gmail.com', 'Support Team');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'Your OTP for Password Reset';

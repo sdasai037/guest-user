@@ -46,7 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Enter OTP</h2>
@@ -55,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="otp" class="form-label">Enter the OTP sent to your email</label>
                 <input type="text" name="otp" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Verify OTP</button>
+            <button type="submit" class="btn btn-secondary mt-3 ">Verify OTP</button>
         </form>
     </div>
 </body>

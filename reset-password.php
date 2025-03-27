@@ -9,7 +9,7 @@ if (!isset($_SESSION['email'])) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_SESSION['email'];
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    $password = $_POST['password'];
 
     $sql = "UPDATE signup SET password='$password' WHERE email='$email'";
     if ($con->query($sql) === TRUE) {
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="password" class="form-label">New Password</label>
                 <input type="password" name="password" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Update Password</button>
+            <button type="submit" class="btn btn-secondary mt-3 ">Update Password</button>
         </form>
     </div>
 </body>
